@@ -13,6 +13,14 @@ public:
         qDebug() << "当前程序路径为：" << appPath;
         // 获取配置内容
         QString configPath = QDir::toNativeSeparators(appPath + QDir::separator() + "config.ini");
+        qDebug() << configPath;
+
+        QFile file(configPath);
+        if(!file.exists()) {
+            qDebug() << "错误: config.ini 文件不存在！";
+            return;
+        }
+
         QSettings settings(configPath, QSettings::IniFormat);
 
         gateHost = settings.value("GateServer/Host").toString();

@@ -1,81 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\asioIOContextPool.cpp">
+    <ClCompile Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\asioIOContextPool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\configManager.cpp">
+    <ClCompile Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\configManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\CServer.cpp">
+    <ClCompile Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\CServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\GateServer.cpp">
+    <ClCompile Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\GateServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\httpConnection.cpp">
+    <ClCompile Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\httpConnection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\logicSystem.cpp">
+    <ClCompile Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\logicSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\utils.cpp">
+    <ClCompile Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\varifyGrpcClient.cpp">
+    <ClCompile Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\varifyGrpcClient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\message.grpc.pb.cc">
+    <ClCompile Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\message.grpc.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\message.pb.cc">
+    <ClCompile Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\message.pb.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\asioIOContextPool.h">
+    <ClInclude Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\asioIOContextPool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\configManager.h">
+    <ClInclude Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\configManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\CServer.h">
+    <ClInclude Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\CServer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\httpConnection.h">
+    <ClInclude Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\httpConnection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\logicSystem.h">
+    <ClInclude Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\logicSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\utils.h">
+    <ClInclude Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\singleton.h">
+    <ClInclude Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\singleton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\const.h">
+    <ClInclude Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\const.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\message.grpc.pb.h">
+    <ClInclude Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\message.grpc.pb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\message.pb.h">
+    <ClInclude Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\message.pb.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\varifyGrpcClient.h">
+    <ClInclude Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\varifyGrpcClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\CMakeLists.txt" />
+    <CustomBuild Include="E:\File\Project\C++\MuInstantMessage\server\GateServer\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{10E6BD79-BC99-3D04-BBD1-F99EE7397D8E}</UniqueIdentifier>
+      <UniqueIdentifier>{DB7E37FB-A4F6-3AE1-9D36-67B9C97DDF8A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{B5FBE2B0-908C-3634-850E-6AEAFABE719F}</UniqueIdentifier>
+      <UniqueIdentifier>{3A943AE0-F472-390D-981B-12D1E4D593CC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
