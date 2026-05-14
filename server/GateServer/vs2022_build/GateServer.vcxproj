@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BD897411-1A48-30AD-8C5C-A16F76B2A224}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>GateServer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GateServer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GateServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GateServer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GateServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GateServer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GateServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GateServer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GateServer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "F:/Environment/vcpkg/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ABSL_CONSUME_DLL;PROTOBUF_USE_DLLS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ABSL_CONSUME_DLL;PROTOBUF_USE_DLLS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;F:\Environment\vcpkg\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;F:\Environment\vcpkg\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file F:/Environment/vcpkg/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/Debug/GateServer.exe -installedDir F:/Environment/vcpkg/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_debug\lib\jsoncpp_static.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\gpr.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\grpc.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\grpc++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\grpc++_alts.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\redis++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\grpc++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\grpc.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\gpr.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\upb_json_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\upb_textformat_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\upb_mini_descriptor_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\upb_wire_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\utf8_range.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\upb_message_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\upb_base_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\upb_mem_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\re2.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\absl_flags_internal.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\absl_flags_marshalling.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\absl_flags_reflection.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\absl_flags_config.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\absl_flags_program_name.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\absl_flags_private_handle_accessor.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\absl_flags_commandlineflag.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\absl_flags_commandlineflag_internal.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\zlibd.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\cares.lib;advapi32.lib;iphlpapi.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\libssl.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\libcrypto.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\address_sorting.lib;-ignore:4221;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\libprotobufd.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\abseil_dll.lib;wsock32.lib;gdi32.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\debug\lib\hiredisd.lib;ws2_32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/Debug/GateServer.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/Debug/GateServer.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "F:/Environment/vcpkg/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ABSL_CONSUME_DLL;PROTOBUF_USE_DLLS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ABSL_CONSUME_DLL;PROTOBUF_USE_DLLS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;F:\Environment\vcpkg\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;F:\Environment\vcpkg\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file F:/Environment/vcpkg/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/Release/GateServer.exe -installedDir F:/Environment/vcpkg/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\lib\jsoncpp_static.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\gpr.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc++_alts.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\redis++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\gpr.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_json_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_textformat_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_mini_descriptor_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_wire_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\utf8_range.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_message_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_base_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_mem_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\re2.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_internal.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_marshalling.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_reflection.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_config.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_program_name.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_private_handle_accessor.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_commandlineflag.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_commandlineflag_internal.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\zlib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\cares.lib;advapi32.lib;iphlpapi.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\libssl.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\libcrypto.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\address_sorting.lib;-ignore:4221;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\libprotobuf.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\abseil_dll.lib;wsock32.lib;gdi32.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\hiredis.lib;ws2_32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/Release/GateServer.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/Release/GateServer.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "F:/Environment/vcpkg/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ABSL_CONSUME_DLL;PROTOBUF_USE_DLLS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ABSL_CONSUME_DLL;PROTOBUF_USE_DLLS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;F:\Environment\vcpkg\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;F:\Environment\vcpkg\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file F:/Environment/vcpkg/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/MinSizeRel/GateServer.exe -installedDir F:/Environment/vcpkg/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\lib\jsoncpp_static.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\gpr.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc++_alts.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\redis++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\gpr.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_json_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_textformat_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_mini_descriptor_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_wire_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\utf8_range.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_message_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_base_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_mem_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\re2.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_internal.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_marshalling.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_reflection.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_config.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_program_name.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_private_handle_accessor.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_commandlineflag.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_commandlineflag_internal.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\zlib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\cares.lib;advapi32.lib;iphlpapi.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\libssl.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\libcrypto.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\address_sorting.lib;-ignore:4221;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\libprotobuf.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\abseil_dll.lib;wsock32.lib;gdi32.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\hiredis.lib;ws2_32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/MinSizeRel/GateServer.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/MinSizeRel/GateServer.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "F:/Environment/vcpkg/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ABSL_CONSUME_DLL;PROTOBUF_USE_DLLS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ABSL_CONSUME_DLL;PROTOBUF_USE_DLLS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;F:\Environment\vcpkg\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\include;E:\File\Library\Cpp\boost_1_89_0;F:\Environment\vcpkg\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file F:/Environment/vcpkg/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/RelWithDebInfo/GateServer.exe -installedDir F:/Environment/vcpkg/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\File\Library\Cpp\jsoncpp-1.9.7\vs2022_release\lib\jsoncpp_static.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\gpr.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc++_alts.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\redis++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc++.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\grpc.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\gpr.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_json_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_textformat_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_mini_descriptor_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_wire_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\utf8_range.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_message_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_base_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\upb_mem_lib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\re2.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_internal.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_marshalling.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_reflection.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_config.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_program_name.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_private_handle_accessor.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_commandlineflag.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\absl_flags_commandlineflag_internal.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\zlib.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\cares.lib;advapi32.lib;iphlpapi.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\libssl.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\libcrypto.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\address_sorting.lib;-ignore:4221;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\libprotobuf.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\abseil_dll.lib;wsock32.lib;gdi32.lib;F:\Environment\vcpkg\vcpkg\installed\x64-windows\lib\hiredis.lib;ws2_32.lib;crypt32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/RelWithDebInfo/GateServer.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/RelWithDebInfo/GateServer.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/File/Project/C++/MuInstanceMessage/server/GateServer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\Soft\CMake\bin\cmake.exe -SE:/File/Project/C++/MuInstanceMessage/server/GateServer -BE:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build --check-stamp-file E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeCCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeSystem.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeDependentOption.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeFindDependencyMacro.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindOpenSSL.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindThreads.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindZLIB.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCConfig.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\modules\Findc-ares.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\modules\Findre2.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2ConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/File/Project/C++/MuInstanceMessage/server/GateServer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\Soft\CMake\bin\cmake.exe -SE:/File/Project/C++/MuInstanceMessage/server/GateServer -BE:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build --check-stamp-file E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeCCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeSystem.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeDependentOption.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeFindDependencyMacro.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindOpenSSL.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindThreads.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindZLIB.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCConfig.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\modules\Findc-ares.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\modules\Findre2.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2ConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/File/Project/C++/MuInstanceMessage/server/GateServer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\Soft\CMake\bin\cmake.exe -SE:/File/Project/C++/MuInstanceMessage/server/GateServer -BE:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build --check-stamp-file E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeCCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeSystem.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeDependentOption.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeFindDependencyMacro.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindOpenSSL.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindThreads.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindZLIB.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCConfig.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\modules\Findc-ares.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\modules\Findre2.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2ConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/File/Project/C++/MuInstanceMessage/server/GateServer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\Soft\CMake\bin\cmake.exe -SE:/File/Project/C++/MuInstanceMessage/server/GateServer -BE:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build --check-stamp-file E:/File/Project/C++/MuInstanceMessage/server/GateServer/vs2022_build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeCCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\4.1.2\CMakeSystem.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeDependentOption.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeFindDependencyMacro.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindOpenSSL.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindThreads.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\FindZLIB.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;E:\Soft\CMake\share\cmake-4.1\Modules\SelectLibraryConfigurations.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslConfig.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\absl\abslTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\c-ares\c-ares-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCConfig.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCPluginTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\gRPCTargets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\modules\Findc-ares.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\grpc\modules\Findre2.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\hiredis\hiredis-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-generate.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-module.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-options.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\protobuf-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\protobuf\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2ConfigVersion.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\re2\re2Targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-config-version.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\redis++\redis++-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-config.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-debug.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets-release.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\utf8_range\utf8_range-targets.cmake;F:\Environment\vcpkg\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;F:\Environment\vcpkg\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\asioIOContextPool.cpp" />
+    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\configManager.cpp" />
+    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\CServer.cpp" />
+    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\GateServer.cpp" />
+    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\httpConnection.cpp" />
+    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\logicSystem.cpp" />
+    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\utils.cpp" />
+    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\varifyGrpcClient.cpp" />
+    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\message.grpc.pb.cc" />
+    <ClCompile Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\message.pb.cc" />
+    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\asioIOContextPool.h" />
+    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\configManager.h" />
+    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\CServer.h" />
+    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\httpConnection.h" />
+    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\logicSystem.h" />
+    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\utils.h" />
+    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\singleton.h" />
+    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\const.h" />
+    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\message.grpc.pb.h" />
+    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\message.pb.h" />
+    <ClInclude Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\varifyGrpcClient.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="E:\File\Project\C++\MuInstanceMessage\server\GateServer\vs2022_build\ZERO_CHECK.vcxproj">
+      <Project>{20F16D2A-D931-3D16-8D5D-E18C835FD5BB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
