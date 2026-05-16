@@ -1,5 +1,5 @@
-﻿#include "CServer.h"
-#include "HttpConnection.h"
+﻿#include "network/CServer.h"
+#include "network/httpConnection.h"
 
 CServer::CServer(boost::asio::io_context &context, unsigned short port) 
 	: _context(context)

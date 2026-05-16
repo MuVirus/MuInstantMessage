@@ -1,4 +1,4 @@
-﻿#include "configManager.h"
+﻿#include "config/configManager.h"
 
 SectionInfo::SectionInfo() {}
 

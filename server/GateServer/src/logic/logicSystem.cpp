@@ -1,7 +1,8 @@
-﻿#include "logicSystem.h"
-#include "httpConnection.h"
-#include "singleton.h"
-#include "varifyGrpcClient.h"
+﻿#include "logic/logicSystem.h"
+
+#include "common/singleton.h"
+#include "network/httpConnection.h"
+#include "network/varifyGrpcClient.h"
 
 LogicSystem::LogicSystem() {
 	// 注册Http Get请求路由
@@ -51,8 +52,19 @@ LogicSystem::LogicSystem() {
 		beast::ostream(connection->_response.body())
 			<< jsonStr;
 		});
+	// 用户注册
 	registerPost("/user_register", [](std::shared_ptr<HttpConnection> httpConnection) {
+		// 解析请求体Json数据：获取请求体body, 转换成字符串, 判断是不是json数据
 
+		// 判断当前验证码是否过期：从Redis中获取请求Json数据中的email值
+
+		// 判断当前验证码(Json)与Redis中验证码是否一致
+
+		// 先从Redis中判断是否有该用户
+
+		// 如果Redis中没有该用户，再从数据库中判断是否有该用户
+
+		// 创建用户
 		});
 }
 

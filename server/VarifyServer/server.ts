@@ -1,12 +1,9 @@
-import Long from 'long';
 import grpc from "@grpc/grpc-js";
 import message_proto from "./proto";
 import { SendMail } from "./email";
 import { email_user } from './config';
 import { Errors } from './const'
 import { GetRedis, SetRedisExpire } from './redis'
-
-console.log(Long);
 
 async function GetVarifyCode(call: any, callback: any) {
     // 获取email

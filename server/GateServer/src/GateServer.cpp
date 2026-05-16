@@ -1,9 +1,8 @@
-﻿#include "const.h"
-
-#include "singleton.h"
-#include "CServer.h"
-#include "configManager.h"
-#include "asioIOContextPool.h"
+﻿#include "common/const.h"
+#include "common/singleton.h"
+#include "config/configManager.h"
+#include "network/CServer.h"
+#include "network/asioIOContextPool.h"
 
 int main()
 {
@@ -29,7 +28,12 @@ int main()
         server->start();
 
         // 初始化redis
-        auto& redis = Singleton<redis::Redis>::getInstance("tcp://" + Singleton<ConfigManager>::getInstance()["Redis"]["Host"] + ":" + Singleton<ConfigManager>::getInstance()["Redis"]["Port"]);
+        try {
+            auto& redis = Singleton<redis::Redis>::getInstance("tcp://" + Singleton<ConfigManager>::getInstance()["Redis"]["Host"] + ":" + Singleton<ConfigManager>::getInstance()["Redis"]["Port"]);
+        }
+        catch (const redis::Error& err) {
+            std::cerr << "Redis: " << err.what() << std::endl;
+        }
         //redis.set("hello", "ggg");
 
         // 执行事件循环

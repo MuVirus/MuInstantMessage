@@ -23,6 +23,8 @@
 #include <grpcpp/grpcpp.h>
 // redis++
 #include <sw/redis++/redis++.h>
+// libpqxx
+#include <pqxx/pqxx>
 
 namespace beast = boost::beast;
 namespace http = beast::http;

@@ -1,6 +1,7 @@
-﻿#include "varifyGrpcClient.h"
-#include "singleton.h"
-#include "configManager.h"
+﻿#include "network/varifyGrpcClient.h"
+
+#include "common/singleton.h"
+#include "config/configManager.h"
 
 VarifyGrpcClient::VarifyGrpcClient() {
 	ConfigManager& config = Singleton<ConfigManager>::getInstance();

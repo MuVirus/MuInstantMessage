@@ -1,9 +1,10 @@
-﻿#include "httpConnection.h"
-#include "singleton.h"
-#include "logicSystem.h"
-#include "utils.h"
+﻿#include "network/httpConnection.h"
+
 #include <memory>
 #include <iostream>
+#include "common/singleton.h"
+#include "common/utils.h"
+#include "logic/logicSystem.h"
 
 HttpConnection::HttpConnection(tcp::socket socket)
 	: _socket(std::move(socket)) 

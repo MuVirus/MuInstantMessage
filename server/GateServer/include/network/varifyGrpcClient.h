@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "const.h"
+#include "common/const.h"
 
 #include "message.grpc.pb.h"
 
