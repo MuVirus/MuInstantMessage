@@ -47,4 +47,7 @@ enum ErrorCodes {
 	TokenInvalid = 1010,   //Token失效
 	UidInvalid = 1011,  //uid无效
 	RPCConPoolClosed = 1012,	// RPC连接池关闭
+	RedisError = 1013,	// Redis错误
+	DBError = 1014,	// 数据库错误
+	UserNameValid = 1015,	// 用户名非法
 };

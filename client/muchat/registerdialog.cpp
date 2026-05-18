@@ -89,11 +89,13 @@ void RegisterDialog::initHttpHandlers()
     // 用户注册HTTP请求回调函数
     _handlers.insert(ReqId::ID_REG_USER, [this](QJsonObject jsonObj) {
         int error = jsonObj["error"].toInt();
+        int uid = jsonObj["uid"].toInt();
         if(error != ErrorCodes::SUCCESS) {
             showTip(tr("错误: ") + QString::number(error), false);
             return;
         }
         showTip(tr("注册成功"), true);
+        qDebug() << "uid is " << uid;
     });
 }
 
@@ -107,13 +109,17 @@ void RegisterDialog::on_confirm_button_clicked()
     checkVarifyValid();
     // ===将数据打包成json格式发送
     QJsonObject jsonObj;
-    jsonObj["user"] = ui->user_edit->text();
+    jsonObj["name"] = ui->user_edit->text();
     jsonObj["email"] = ui->email_edit->text();
-    jsonObj["passwd"] = ui->pass_edit->text();
+    jsonObj["pass"] = ui->pass_edit->text();
     jsonObj["confirm"] = ui->confirm_edit->text();
-    jsonObj["varifycode"] = ui->verify_edit->text();
+    jsonObj["code"] = ui->verify_edit->text();
 
-    HttpManager::getInstance().PostHttpReq(QUrl(Singleton<ConfigManager>::getInstance().getGateHttpAddress() + "/user_register"), jsonObj, ReqId::ID_REG_USER, Modules::REGISTER_MOD);
+    HttpManager::getInstance().PostHttpReq(
+        QUrl(Singleton<ConfigManager>::getInstance().getGateHttpAddress() + "/user_register"),
+        jsonObj,
+        ReqId::ID_REG_USER, Modules::REGISTER_MOD
+    );
 }
 
 

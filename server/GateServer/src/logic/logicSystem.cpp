@@ -3,6 +3,8 @@
 #include "common/singleton.h"
 #include "network/httpConnection.h"
 #include "network/varifyGrpcClient.h"
+#include "database/pgManager.h"
+#include "config/configManager.h"
 
 LogicSystem::LogicSystem() {
 	// 注册Http Get请求路由
@@ -55,16 +57,98 @@ LogicSystem::LogicSystem() {
 	// 用户注册
 	registerPost("/user_register", [](std::shared_ptr<HttpConnection> httpConnection) {
 		// 解析请求体Json数据：获取请求体body, 转换成字符串, 判断是不是json数据
+		auto boost_str = beast::buffers_to_string(httpConnection->_request.body().data());
 
-		// 判断当前验证码是否过期：从Redis中获取请求Json数据中的email值
+		Json::Value src_root;
+		Json::Value root;
+		Json::Reader reader;
 
-		// 判断当前验证码(Json)与Redis中验证码是否一致
+		bool parse_success = reader.parse(boost_str, src_root);
+		if (!parse_success) {
+			root["error"] = ErrorCodes::Error_Json;
+			std::string jsonStr = root.toStyledString();
+			beast::ostream(httpConnection->_response.body()) << jsonStr;
+			return;
+		}
 
-		// 先从Redis中判断是否有该用户
+		// 获取值
+		auto name = src_root["name"].asString();
+		auto email = src_root["email"].asString();
+		auto pass = src_root["pass"].asString();
+		auto confirm = src_root["confirm"].asString();
+		auto code = src_root["code"].asString();
 
-		// 如果Redis中没有该用户，再从数据库中判断是否有该用户
+		// 空值判断
+		if (name.empty()) {
+			root["error"] = ErrorCodes::UserNameValid;
+			std::string jsonStr = root.toStyledString();
+			beast::ostream(httpConnection->_response.body()) << jsonStr;
+			return;
+		}
 
-		// 创建用户
+		// === 密码部分
+		// 判断密码与确认密码是否相等
+		if (pass != confirm) {
+			root["error"] = ErrorCodes::PasswdErr;
+			std::string jsonStr = root.toStyledString();
+			beast::ostream(httpConnection->_response.body()) << jsonStr;
+			return;
+		}
+		// tips: 也可以加一个密码格式的正确(安全)
+
+		// === 验证码部分
+		try {
+			auto& redis = Singleton<redis::Redis>::getInstance("tcp://" + Singleton<ConfigManager>::getInstance()["Redis"]["Host"] + ":" + Singleton<ConfigManager>::getInstance()["Redis"]["Port"]);
+			auto redisCode = redis.get(email);
+			// 判断当前验证码是否过期/压根没有发送验证码
+			if (!redisCode) {
+				root["error"] = ErrorCodes::VarifyExpired;
+				std::string jsonStr = root.toStyledString();
+				beast::ostream(httpConnection->_response.body()) << jsonStr;
+				return;
+			}
+
+			// 判断当前验证码(Json)与Redis中验证码是否一致
+			if (code != *redisCode) {
+				root["error"] = ErrorCodes::VarifyCodeErr;
+				std::string jsonStr = root.toStyledString();
+				beast::ostream(httpConnection->_response.body()) << jsonStr;
+				return;
+			}
+
+			// tips: 可以先从Redis中判断是否有该用户
+
+		}
+		catch (const redis::Error& error) {
+			root["error"] = ErrorCodes::RedisError;
+			std::string jsonStr = root.toStyledString();
+			beast::ostream(httpConnection->_response.body()) << jsonStr;
+			return;
+		} 
+
+		// PgSQL创建用户(管理类: 逻辑)
+		int uid = Singleton<PgManager>::getInstance().RegUser(name, email, pass);
+		std::cout << "uid: " << uid << std::endl;
+		if (uid == 0) {
+			std::cerr << "user or email exist" << std::endl;
+			root["error"] = ErrorCodes::UserExist;
+			std::string jsonStr = root.toStyledString();
+			beast::ostream(httpConnection->_response.body()) << jsonStr;
+			return;
+		}
+		else if (uid == -1) {
+			std::cerr << "PgSQL error" << std::endl;
+			root["error"] = ErrorCodes::DBError;
+			std::string jsonStr = root.toStyledString();
+			beast::ostream(httpConnection->_response.body()) << jsonStr;
+			return;
+		}
+
+		root["error"] = ErrorCodes::Success;
+		root["uid"] = uid;
+		std::string jsonStr = root.toStyledString();
+		beast::ostream(httpConnection->_response.body())
+			<< jsonStr;
 		});
 }
 
